@@ -69,7 +69,7 @@ const App = () => {
   }
 
   return (
-    <section className="bg-emerald-500 flex items-center justify-center h-screen">
+    <section className="bg-cyan-700 flex items-center justify-center h-screen">
       <div>
         <Toaster toastOptions={{ duration: 4000 }} />
         <div id="recaptcha-container"></div>
@@ -80,15 +80,15 @@ const App = () => {
         ) : (
           <div className="w-80 flex flex-col gap-4 rounded-lg p-4">
             <h1 className="text-center leading-normal text-white font-medium text-3xl mb-6">
-              Welcome to <br /> CODE A PROGRAM
+              OTP VERIFICATION USING FIREBASE
             </h1>
             {showOTP ? (
               <>
-                <div className="bg-white text-emerald-500 w-fit mx-auto p-4 rounded-full">
+                <div className="bg-white text-cyan-700 w-fit mx-auto p-4 rounded-full">
                   <BsFillShieldLockFill size={30} />
                 </div>
                 <label
-                  htmlFor="otp"
+                  htmlFor="otp"bg-cyan-700
                   className="font-bold text-xl text-white text-center"
                 >
                   Enter your OTP
@@ -104,7 +104,7 @@ const App = () => {
                 ></OtpInput>
                 <button
                   onClick={onOTPVerify}
-                  className="bg-emerald-600 w-full flex gap-1 items-center justify-center py-2.5 text-white rounded"
+                  className="bg-cyan-800 w-full flex gap-1 items-center justify-center py-2.5 text-white rounded"
                 >
                   {loading && (
                     <CgSpinner size={20} className="mt-1 animate-spin" />
@@ -114,7 +114,7 @@ const App = () => {
               </>
             ) : (
               <>
-                <div className="bg-white text-emerald-500 w-fit mx-auto p-4 rounded-full">
+                <div className="bg-white text-cyan-700 w-fit mx-auto p-4 rounded-full">
                   <BsTelephoneFill size={30} />
                 </div>
                 <label
@@ -126,7 +126,7 @@ const App = () => {
                 <PhoneInput country={"in"} value={ph} onChange={setPh} />
                 <button
                   onClick={onSignup}
-                  className="bg-emerald-600 w-full flex gap-1 items-center justify-center py-2.5 text-white rounded"
+                  className="bg-cyan-800 w-full flex gap-1 items-center justify-center py-2.5 text-white rounded"
                 >
                   {loading && (
                     <CgSpinner size={20} className="mt-1 animate-spin" />
